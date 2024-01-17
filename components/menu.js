@@ -14,7 +14,7 @@ let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 *☼︎author:${config.OWNER_NAME.toLowerCase()}*
 *☼︎total-plugins:${commands.length}*
 *☼︎ram:${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-*☼︎mode:${config.WORK_TYPE.toLowerCase()}${readmore()}*\n`
+*☼︎mode:${config.WORK_TYPE.toLowerCase()}* ${readMore}\n`
 let cmnd = [];
 let cmd;
 let category = [];
