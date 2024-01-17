@@ -9,10 +9,13 @@ const speed = now() - now();
 let [date, time] = new Date().toLocaleString("en-IN", {timeZone: "Asia/Kolkata"}).split(",");
 let menu = `     *[${config.BOT_NAME.toUpperCase()}]*
 
-*➛𝘜𝘴𝘦𝘳:${msg.pushName}*
-*➛𝘖𝘸𝘯𝘦𝘳:${config.OWNER_NAME.toUpperCase()}*
-*➛𝘙𝘢𝘮:${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-*➛𝘔𝘰𝘥𝘦:${config.WORK_TYPE.toUpperCase()}*\n`
+*➛ 𝘜𝘴𝘦𝘳 :${msg.pushName}*
+
+*➛ 𝘖𝘸𝘯𝘦𝘳 :${config.OWNER_NAME.toUpperCase()}*
+
+*➛ 𝘙𝘢𝘮 :${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
+
+*➛𝘔𝘰𝘥𝘦 :${config.WORK_TYPE.toUpperCase()}*\n`
 let cmnd = [];
 let cmd;
 let category = [];
