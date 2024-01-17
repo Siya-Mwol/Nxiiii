@@ -5,7 +5,7 @@ const toBool = (x) => x === "true";
 module.exports = {
   LOGS: toBool(process.env.LOGS) || true, //false for if you don't want show the logs
   HANDLERS:
-    process.env.HANDLER === "false" || process.env.HANDLER === "null"
+    process.env.HANDLER === "false" || process.env.HANDLER === "^"
       ? "^[.]" // forfor null just "^" add this
       : "^[.]",
   BRANCH: "master",
