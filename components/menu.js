@@ -11,12 +11,10 @@ let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 
 *☼︎user:${msg.pushName}*
 *☼︎date:${date}*
-*☼︎time:${time}*
 *☼︎author:${config.OWNER_NAME.toLowerCase()}*
 *☼︎total-plugins:${commands.length}*
-*☼︎speed:${speed.toFixed(4)}seconds*
 *☼︎ram:${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-*☼︎mode:${config.WORK_TYPE.toLowerCase()}*\n`
+*☼︎mode:${config.WORK_TYPE.toLowerCase()}${readmore()}*\n`
 let cmnd = [];
 let cmd;
 let category = [];
