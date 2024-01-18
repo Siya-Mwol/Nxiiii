@@ -5,9 +5,9 @@ const toBool = (x) => x === "true";
 module.exports = {
   LOGS: toBool(process.env.LOGS) || true, //false for if you don't want show the logs
   HANDLERS:
-    process.env.HANDLER === "false" || process.env.HANDLER === "^"
-      ? "^[^]" // forfor null just "^" add this
-      : "^[^]",
+    process.env.HANDLER === "false" || process.env.HANDLER === "null"
+      ? "^[.]" // forfor null just "^" add this
+      : "^[.]",
   BRANCH: "master",
   OWNER_NUMBER: ["919961857267@s.whatsapp.net", "0@s.whatsapp.net"],
   STICKER_DATA: process.env.STICKER_DATA || "CLASH-WA-BOT;TOXIC-KICHUX",
