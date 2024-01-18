@@ -16,7 +16,8 @@ let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 *➛ 𝘜𝘴𝘦𝘳 :${msg.pushName}*
 *➛ 𝘖𝘸𝘯𝘦𝘳 :${config.OWNER_NAME.toLowerCase()}*
 *➛ 𝘙𝘢𝘮 :${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-*➛ 𝘔𝘰𝘥𝘦 :${config.WORK_TYPE.toLowerCase()}* ${readMore}\n`
+*➛ 𝘔𝘰𝘥𝘦 :${config.WORK_TYPE.toLowerCase()}*
+${readMore}\n`
 let cmnd = [];
 let cmd;
 let category = [];
