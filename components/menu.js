@@ -6,6 +6,8 @@ const now = require("performance-now");
 clash({pattern: "menu", fromMe: false, desc: "Show all bot commands.", type: "info",},
 async ({msg}) => {
 const speed = now() - now();
+const more = String.fromCharCode(8206);
+const readMore = more.repeat(4001);
 let [date, time] = new Date().toLocaleString("en-IN", {timeZone: "Asia/Kolkata"}).split(",");
 let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 
@@ -14,7 +16,7 @@ let menu = `     *[${config.BOT_NAME.toLowerCase()}]*
 *➛ 𝘜𝘴𝘦𝘳 :${msg.pushName}*
 *➛ 𝘖𝘸𝘯𝘦𝘳 :${config.OWNER_NAME.toLowerCase()}*
 *➛ 𝘙𝘢𝘮 :${formatp(os.totalmem() - os.freemem())}/${formatp(os.totalmem())}*
-*➛ 𝘔𝘰𝘥𝘦 :${config.WORK_TYPE.toLowerCase()}*\n`
+*➛ 𝘔𝘰𝘥𝘦 :${config.WORK_TYPE.toLowerCase()}* ${readMore}\n`
 let cmnd = [];
 let cmd;
 let category = [];
