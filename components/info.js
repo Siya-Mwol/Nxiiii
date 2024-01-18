@@ -7,7 +7,7 @@ const start = new Date().getTime();
 let { key } = await msg.tinyreply("*Ping!*");
 const end = new Date().getTime();
 var speed = end - start;
-await msg.tinyreply(`*PingSpeed:${speed}ms*()}`);
+await msg.tinyreply(`*PingSpeed:${speed}ms*`);
 });
 
 clash({pattern: "runtime", fromMe: false, desc: "Info of how long the bot is alive.", type: "info",},
